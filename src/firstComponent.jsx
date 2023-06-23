@@ -26,3 +26,7 @@ export const FirstComponent = ( { title, subtitle } ) =>{
 FirstComponent.PropTypes = {
     title: PropTypes.string.isRequired
 }
+
+FirstComponent.defaultProps = {
+    title:'no hay titulo'
+}
