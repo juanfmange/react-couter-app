@@ -8,13 +8,13 @@ const newMessage = {
     title: 'diccionario'
 }
 
-export const FirstComponent = () =>{
-    
+export const FirstComponent = ( { title, subtitle } ) =>{
+
     return(
         <>
-            <h1>{suma()}</h1>
+            <h1>{ title }</h1>
             {/* <h1> { JSON.stringify(newMessage) } </h1> */}
-                <p>hola</p>
+                <p>hola soy un numero {subtitle}</p>
         </>
     )
 }
