@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const suma = () =>{
     const res = 5 + 10
     return res
@@ -9,7 +11,9 @@ const newMessage = {
 }
 
 export const FirstComponent = ( { title, subtitle } ) =>{
-
+    if (!title) {
+        throw new Error('el titulo no existe');
+    }
     return(
         <>
             <h1>{ title }</h1>
@@ -17,4 +21,8 @@ export const FirstComponent = ( { title, subtitle } ) =>{
                 <p>hola soy un numero {subtitle}</p>
         </>
     )
+}
+
+FirstComponent.PropTypes = {
+    title: PropTypes.string.isRequired
 }
