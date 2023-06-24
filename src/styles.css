@@ -5,3 +5,10 @@ html,body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     padding: 70px;
 }
+
+button {
+    padding: 20px;
+    font-size: 1.3rem;
+    margin-right: 5px;
+
+}
